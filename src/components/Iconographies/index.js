@@ -32,11 +32,11 @@ const Iconographies = () => {
 	];
 
 	return (
-		<Box component="main" className="bg-[#faebd7] p-3 mb-2">
+		<Box component="main" className="bg-[#faebd7] px-3 mb-2 py-28">
 			<Box>
 				<Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 3 }}>
 					<Box className="pt-3">
-						<fieldset>
+						<fieldset className="px-2">
 							<Box
 								sx={{
 									display: "grid",

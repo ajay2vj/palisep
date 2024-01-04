@@ -35,7 +35,7 @@ const Recherche = () => {
 		setEnvoyerOpen(!envoyerOpen);
 	};
 	return (
-		<Box component="main" className="bg-[#faebd7] p-3 mb-2">
+		<Box component="main" className="bg-[#faebd7] px-3 mb-2 py-28">
 			<Box>
 				<Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 3 }}>
 					<Box
@@ -45,7 +45,7 @@ const Recherche = () => {
 							gap: "10px",
 						}}
 					>
-						<fieldset>
+						<fieldset className="px-2">
 							<legend>Search by surname</legend>
 							<Box className="flex gap-2">
 								<TextField
@@ -65,7 +65,7 @@ const Recherche = () => {
 								</Button>
 							</Box>
 						</fieldset>
-						<fieldset>
+						<fieldset className="px-2">
 							<legend>Search by Fief or Commune</legend>
 							<Box className="flex gap-2">
 								<TextField
@@ -87,7 +87,7 @@ const Recherche = () => {
 						</fieldset>
 					</Box>
 					<Box className="pt-3">
-						<fieldset>
+						<fieldset className="px-2">
 							<legend>Search by Weapons</legend>
 							<Box className="flex gap-5">
 								<TextField

@@ -1,8 +1,115 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--PrimaryColor: hsl(199, 100%, 33%);
+	--SecondaryColor: hsl(187, 85%, 43%);
+	--gradientColor: linear-gradient(
+		to right,
+		hsl(187, 85%, 43%),
+		hsl(199, 100%, 33%)
+	);
+	--whiteColor: hsl(0, 0%, 100%);
+	--blackColor: hsl(201, 33%, 16%);
+	--textColor: hsl(240, 4%, 36%);
+	--whiteColorDream: hsl(0, 0%, 93%);
+	--greyText: rgb(190, 190, 190);
+	--inputColor: rgb(239, 239, 239);
+	--bodyColor: rgb(240, 240, 246);
+	--cardBG: rgb(225, 225, 235);
+}
 
 body {
-	font-family: "Open Sans", serif;
+	scroll-behavior: smooth;
 }
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.section {
+	padding: 4rem 0 2rem;
+}
+
+.icon {
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.grid {
+	display: grid;
+	align-items: center;
+}
+
+.btn {
+	padding: 0.6rem 1.5rem;
+	background-color: var(--PrimaryColor);
+	border-radius: 3rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn a {
+	color: var(--whiteColor);
+	font-size: 500;
+}
+
+.btn:hover {
+	background-color: var(--SecondaryColor);
+}
+
+img,
+video {
+	width: 100%;
+	height: auto;
+}
+
+input {
+	font-size: 100%;
+}
+
+body {
+	background-color: var(--bodyColor);
+}
+
+@media screen and (min-width: 1240px) {
+	.container {
+		width: 80% !important;
+		margin: auto !important;
+	}
+
+	.section {
+		padding: 6rem 0 4rem;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	body {
+		zoom: 1.7;
+	}
+}
+
 .App {
 	text-align: center;
 }
@@ -109,16 +216,9 @@ ol {
 	line-height: 140%;
 }
 
-ul,
-ol {
-}
-
 a {
 	text-decoration: none;
 	color: #a7430f;
-}
-
-a:hover {
 }
 
 #wrapper {
@@ -194,49 +294,6 @@ a:hover {
 	color: #a83a01;
 }
 
-/* Search */
-
-#search {
-	float: right;
-	width: 280px;
-	height: 60px;
-	padding: 20px 0px 0px 0px;
-	background: #e9e3cb;
-	border-bottom: 4px solid #ffffff;
-}
-
-#search form {
-	height: 41px;
-	margin: 0;
-	padding: 10px 0 0 20px;
-}
-
-#search fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-
-#search-text {
-	width: 170px;
-	padding: 6px 5px 2px 5px;
-	border: none;
-	background: #ffffff;
-	text-transform: lowercase;
-	font: normal 11px Arial, Helvetica, sans-serif;
-	color: #464032;
-}
-
-#search-submit {
-	width: 50px;
-	height: 23px;
-	border: 1px solid #ac9a79;
-	background: #ac9a79;
-	font-weight: bold;
-	font-size: 10px;
-	color: #ffffff;
-}
-
 /* Menu */
 
 #menu {
@@ -309,9 +366,6 @@ a:hover {
 	width: 95%;
 }
 
-#page-bgbtm {
-}
-
 /* Content */
 
 #content {
@@ -330,12 +384,6 @@ a:hover {
 }
 .post {
 	margin-bottom: 15px;
-}
-
-.post-bgtop {
-}
-
-.post-bgbtm {
 }
 
 .post .title {
@@ -457,11 +505,6 @@ a:hover {
 #sidebar a:hover {
 	text-decoration: underline;
 	color: #8a8a8a;
-}
-
-/* Calendar */
-
-#calendar {
 }
 
 #calendar_wrap {

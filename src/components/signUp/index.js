@@ -1,16 +1,32 @@
 import { Box, Button, Container, TextField } from "@mui/material";
 import React from "react";
 
-export default function Identification() {
+export default function SignUp() {
 	return (
 		<Box component="main" className="bg-[#faebd7] px-6 py-28">
 			<Container maxWidth="xs">
 				<fieldset className="px-2">
-					<legend>IDENTIFICATION</legend>
+					<legend>Sign Up</legend>
 					<TextField
 						margin="normal"
 						required
-						label="Pseudonym"
+						label="Username"
+						autoComplete="off"
+						size="small"
+						fullWidth
+					/>
+					<TextField
+						margin="normal"
+						required
+						label="Email"
+						autoComplete="off"
+						size="small"
+						fullWidth
+					/>
+					<TextField
+						margin="normal"
+						required
+						label="Mobile"
 						autoComplete="off"
 						size="small"
 						fullWidth
@@ -29,7 +45,7 @@ export default function Identification() {
 							variant="contained"
 							sx={{ mt: 2, mb: 2, textTransform: "capitalize" }}
 						>
-							connection
+							Sign Up
 						</Button>
 					</Box>
 				</fieldset>
